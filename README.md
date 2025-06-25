@@ -16,7 +16,7 @@
 
 We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-learn, Pandas, Matplotlib, and Seaborn to complete the entire process from loading the data to evaluating the model. The dataset we use is the IMDb movie reviews dataset, which comes preloaded with NLTK and contains 1000 positive and 1000 negative reviews. 
 
- Project objective  
+1. Project objective  
 
 The main purpose of this project is to:
 
@@ -32,7 +32,7 @@ evaluate the model using accuracy, confusion matrix, and classification report
 
 visualize the performance using seaborn heatmaps
 
- Text Preprocessing
+2. Text Preprocessing
 before the model sees the data, we perform text preprocessing to clean and simplify the input. this includes:
 
 converting all text to lowercase: so that capital words and smaller words treated as same
@@ -45,12 +45,12 @@ Lemmatization: words are reduced to their base forms like "running" → "run" us
 
 these steps help in reducing noise and focusing on the most meaningful words in the text.
 
-TF-IDF Vectorization
+3.TF-IDF Vectorization
 once the text is clean, we use TF-IDF (Term Frequency–Inverse Document Frequency) to convert the words into numbers. TF-IDF assigns higher importance to words that are unique and relevant to a review, and less importance to words that appear too frequently across many reviews.
 
 In this task, we limited TF-IDF to the top 5000 important features to keep the model lightweight and efficient, without losing much accuracy.
 
-Model Training and Evaluation
+4.Model Training and Evaluation
 we use a Logistic Regression model, which is widely used for binary classification tasks like sentiment analysis. we split movie review dataset as
 
 60% for training and
@@ -67,15 +67,15 @@ Confusion matrix: helps us understand where the model is making mistakes
 
 we also use seaborn heatmaps to visually display the confusion matrix in a comfortable way.
 
-Results
+5.Results
 The model achieved approximately 80% accuracy, which is a strong performance for a basic sentiment analysis model using machine learning methods. The performance is balanced for both positive and negative reviews
 
-  Applications
+6. Applications
 This type of sentiment analysis model can be used to apply in many real-world scenarios, such as:
 
-Analyzing product reviews on e-commerce websites like Amazon, Flipkart, or Meesho.
+Analyzing product reviews on e-commerce websites like amazon,flipkart or meesho.
 
-tracking sentiment on social media platforms like twitter, youtube, or facebook
+tracking sentiment on social media platforms like twitter,youtube,or facebook
 
 understanding feedback from customer support or surveys
 
@@ -83,6 +83,6 @@ Filtering  inappropriate content in comment sections
 
 summarizing public opinions about movies, events, products, or services
 
-OUTPUT : ![Image](https://github.com/user-attachments/assets/60aa8a85-1f71-44db-a4b1-33a9ea1dd8f4)
+OUTPUT :![Image](https://github.com/user-attachments/assets/8f2b647a-8666-4335-9f9e-b671e1e5454c)
 
-![Image](https://github.com/user-attachments/assets/42c2fca7-287c-4369-99de-927f03559b7b)
+![Image](https://github.com/user-attachments/assets/c116a5fa-48d5-4625-acf0-efdefed3c3c4)
