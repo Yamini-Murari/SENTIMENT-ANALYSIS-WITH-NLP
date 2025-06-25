@@ -12,54 +12,76 @@
 
 *MENTOR* : NEELA SANTOSH
 
-*DESCRIPTION* : This project demonstrates how to create a simple but effective Sentiment analysis model using Natural Language Processing (NLP) techniques. This task focuses 
+*DESCRIPTION* :This project demonstrates how to build a simple but effective Sentiment Analysis model using Natural Language Processing (NLP) techniques. The task focuses on analyzing customer reviews and classifying them as either positive or negative, helping businesses or platforms understand user opinions at scale.
 
-on analyzing customer reviews and classify them as positive reviews and negative reviews.
+We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-learn, Pandas, Matplotlib, and Seaborn to complete the entire process from loading the data to evaluating the model. The dataset we use is the IMDb movie reviews dataset, which comes preloaded with NLTK and contains 1000 positive and 1000 negative reviews. 
 
-We make use of Python libraries such as NLTK (natural language tool kit), scikit-learn, pandas, and matplotlib and seaborn to handle the whole process. For training and 
+ Project objective  
 
-testing our model, we use  the IMDb movie reviews dataset, which is available through the NLTK corpus.
+The main purpose of this project is to:
 
-The main purpose of this project is :
+download and use a labeled dataset of movie reviews
 
-  download a labeled dataset with movie reviews (1000 positive and 1000 negative)
-  
-   preprocess the text with popular NLP algorithms
-      In the preprocessing step, we:
+preprocess the text using standard NLP steps
 
-      converted all text to lowercase,
+convert cleaned text into numerical features using TF-IDF vectorization
 
-      removed punctuation and numbers
+train a Logistic Regression model on these features
 
-      removed stopwords (like "the","and","is")
+evaluate the model using accuracy, confusion matrix, and classification report
 
-      lemmatized words to reduce them to their root forms (e.g., "running" → "run")
-   
-  use TF-IDF vectorization to transform the cleaned text into numerical features
+visualize the performance using seaborn heatmaps
 
-     TF-IDF (Term Frequency–Inverse Document Frequency) helps to identify which words are important in a document compared to the whole dataset. it gives importance to 
-     
-     meaning full words.
+ Text Preprocessing
+before the model sees the data, we perform text preprocessing to clean and simplify the input. this includes:
 
-     In this code ,I limited the features to important 5000 to keep model efficient
-  
-  use these features to train a logistic regression model
+converting all text to lowercase: so that capital words and smaller words treated as same
 
-      In LogisticRegression ,model used 60% of data for traning and 40% of data for testing
-  
-  use the confusion matrix, classification report, and accuracy to evaluate the model
-  
-  use Seaborn heatmaps to visualize performance
+removing punctuation and numbers: special characters and digits usually do not specify sentiment
 
- *RESULT* : the model acheived 80% accuracy,which is a strong performance for a basic sentiment analysis model using machine learning
+removing stopwords: words like "the", "is", "and" don't carry meaningful sentiment so they are removed
 
-*APPLICATIONS* : this model can be used to
+Lemmatization: words are reduced to their base forms like "running" → "run" using NLTK’s WordNetLemmatizer.
 
-                 product reviews on e-commerce websites like amazon,flipcart,meesho and so on
+these steps help in reducing noise and focusing on the most meaningful words in the text.
 
-                 social media sentiment tracking
+TF-IDF Vectorization
+once the text is clean, we use TF-IDF (Term Frequency–Inverse Document Frequency) to convert the words into numbers. TF-IDF assigns higher importance to words that are unique and relevant to a review, and less importance to words that appear too frequently across many reviews.
 
-                 customer service feedback analysis
+In this task, we limited TF-IDF to the top 5000 important features to keep the model lightweight and efficient, without losing much accuracy.
+
+Model Training and Evaluation
+we use a Logistic Regression model, which is widely used for binary classification tasks like sentiment analysis. we split movie review dataset as
+
+60% for training and
+
+40% for testing
+
+after training, we evaluate the model using:
+
+accuracy: the percentage of correctly predicted reviews
+
+Classification report: which shows precision, recall, and F1-score for both positive and negative reviews
+
+Confusion matrix: helps us understand where the model is making mistakes
+
+we also use seaborn heatmaps to visually display the confusion matrix in a comfortable way.
+
+Results
+The model achieved approximately 80% accuracy, which is a strong performance for a basic sentiment analysis model using machine learning methods. The performance is balanced for both positive and negative reviews
+
+  Applications
+This type of sentiment analysis model can be used to apply in many real-world scenarios, such as:
+
+Analyzing product reviews on e-commerce websites like Amazon, Flipkart, or Meesho.
+
+tracking sentiment on social media platforms like twitter, youtube, or facebook
+
+understanding feedback from customer support or surveys
+
+Filtering  inappropriate content in comment sections
+
+summarizing public opinions about movies, events, products, or services
 
 OUTPUT : ![Image](https://github.com/user-attachments/assets/60aa8a85-1f71-44db-a4b1-33a9ea1dd8f4)
 
