@@ -25,7 +25,6 @@ The main purpose of this project is :
   download a labeled dataset with movie reviews (1000 positive and 1000 negative)
   
    preprocess the text with popular NLP algorithms
-
       In the preprocessing step, we:
 
       converted all text to lowercase,
