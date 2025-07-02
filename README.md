@@ -46,9 +46,7 @@ We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-
    These steps help in reducing noise and focusing on the most meaningful words in the text.
 
 3.TF-IDF Vectorization
-   once the text is clean, we use TF-IDF (Term Frequency–Inverse Document Frequency) to convert the words into numbers. TF-IDF assigns higher importance to words that are     
-   
-   unique and relevant to a review, and less importance to words that appear too frequently across many reviews.
+   once the text is clean, we use TF-IDF (Term Frequency–Inverse Document Frequency) to convert the words into numbers. TF-IDF assigns higher importance to words that are unique and relevant to a review, and less importance to words that appear too frequently across many reviews.
 
    In this task, we limited TF-IDF to the top 5000 important features to keep the model lightweight and efficient, without losing much accuracy.
 
@@ -70,9 +68,7 @@ We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-
    we also use seaborn heatmaps to visually display the confusion matrix in a comfortable way.
 
 5.Results
-   The model achieved approximately 80% accuracy, which is a strong performance for a basic sentiment analysis model using machine learning methods. The performance is   
-   
-   balanced for both positive and negative reviews
+   The model achieved approximately 80% accuracy, which is a strong performance for a basic sentiment analysis model using machine learning methods. The performance is balanced for both positive and negative reviews
 
 6. Applications
     This type of sentiment analysis model can be used to apply in many real-world scenarios, such as:
