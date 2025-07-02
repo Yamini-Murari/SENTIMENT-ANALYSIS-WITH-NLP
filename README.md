@@ -18,30 +18,30 @@ We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-
 
 1. Project objective  
 
-  The main purpose of this project is to:
+    The main purpose of this project is to:
 
-  download and use a labeled dataset of movie reviews
+   - download and use a labeled dataset of movie reviews
 
-  preprocess the text using standard NLP steps
+  - preprocess the text using standard NLP steps
 
-  convert cleaned text into numerical features using TF-IDF vectorization
+  - convert cleaned text into numerical features using TF-IDF vectorization
 
-  train a Logistic Regression model on these features
+  - train a Logistic Regression model on these features
 
-  evaluate the model using accuracy, confusion matrix, and classification report
+   - evaluate the model using accuracy, confusion matrix, and classification report
 
-  visualize the performance using seaborn heatmaps
+   - visualize the performance using seaborn heatmaps
 
 2. Text Preprocessing
     before the model sees the data, we perform text preprocessing to clean and simplify the input. this includes:
 
-    converting all text to lowercase: so that capital words and smaller words treated as same
+    - converting all text to lowercase: so that capital words and smaller words treated as same
 
-    removing punctuation and numbers: special characters and digits usually do not specify sentiment
+    - removing punctuation and numbers: special characters and digits usually do not specify sentiment
 
-    removing stopwords: words like "the", "is", "and" don't carry meaningful sentiment so they are removed
+    - removing stopwords: words like "the", "is", "and" don't carry meaningful sentiment so they are removed
 
-    Lemmatization: words are reduced to their base forms like "running" → "run" using NLTK’s WordNetLemmatizer.
+- Lemmatization: words are reduced to their base forms like "running" → "run" using NLTK’s WordNetLemmatizer.
 
    These steps help in reducing noise and focusing on the most meaningful words in the text.
 
@@ -55,17 +55,17 @@ We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-
 4.Model Training and Evaluation
    we use a Logistic Regression model, which is widely used for binary classification tasks like sentiment analysis. we split movie review dataset as
 
-   60% for training and
+  - 60% for training and
 
-   40% for testing
+  - 40% for testing
 
    after training, we evaluate the model using:
 
-   accuracy: the percentage of correctly predicted reviews
+   - accuracy: the percentage of correctly predicted reviews
 
-   Classification report: which shows precision, recall, and F1-score for both positive and negative reviews
+   - Classification report: which shows precision, recall, and F1-score for both positive and negative reviews
 
-   Confusion matrix: helps us understand where the model is making mistakes
+   - Confusion matrix: helps us understand where the model is making mistakes
 
    we also use seaborn heatmaps to visually display the confusion matrix in a comfortable way.
 
@@ -77,15 +77,15 @@ We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-
 6. Applications
     This type of sentiment analysis model can be used to apply in many real-world scenarios, such as:
 
-    Analyzing product reviews on e-commerce websites like amazon,flipkart or meesho.
+    - Analyzing product reviews on e-commerce websites like amazon,flipkart or meesho.
 
-    tracking sentiment on social media platforms like twitter,youtube,or facebook
+    - tracking sentiment on social media platforms like twitter,youtube,or facebook
 
-     understanding feedback from customer support or surveys
+     - understanding feedback from customer support or surveys
 
-     Filtering  inappropriate content in comment sections
+     - Filtering  inappropriate content in comment sections
 
-     summarizing public opinions about movies, events, products, or services
+     - summarizing public opinions about movies, events, products, or services
 
 OUTPUT :![Image](https://github.com/user-attachments/assets/8f2b647a-8666-4335-9f9e-b671e1e5454c)
 
