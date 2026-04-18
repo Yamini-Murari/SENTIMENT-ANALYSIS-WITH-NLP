@@ -1,7 +1,5 @@
 # SENTIMENT-ANALYSIS-WITH-NLP
 
-*DOMAIN* : MACHINE LEARNING
-
 *DESCRIPTION* :This project demonstrates how to build a simple but effective Sentiment Analysis model using Natural Language Processing (NLP) techniques. The task focuses on analyzing customer reviews and classifying them as either positive or negative, helping businesses or platforms understand user opinions at scale.
 
 We make use of Python libraries such as NLTK (Natural Language Toolkit), scikit-learn, Pandas, Matplotlib, and Seaborn to complete the entire process from loading the data to evaluating the model. The dataset we use is the IMDb movie reviews dataset, which comes preloaded with NLTK and contains 1000 positive and 1000 negative reviews. 
