@@ -1,16 +1,6 @@
 # SENTIMENT-ANALYSIS-WITH-NLP
 
-*COMPANY* : CODTECH IT SOLUTIONS
-
-*NAME* : MURARI YAMINI
-
-*INTERN ID* : CT04DF2780
-
 *DOMAIN* : MACHINE LEARNING
-
-*DURATION* : 4 WEEKS
-
-*MENTOR* : NEELA SANTOSH
 
 *DESCRIPTION* :This project demonstrates how to build a simple but effective Sentiment Analysis model using Natural Language Processing (NLP) techniques. The task focuses on analyzing customer reviews and classifying them as either positive or negative, helping businesses or platforms understand user opinions at scale.
 
